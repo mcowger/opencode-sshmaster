@@ -1,0 +1,19 @@
+{
+  "$schema": "https://opencode.ai/tui.json",
+  "theme": "neon-fuchsia",
+  "keybinds": {
+    "session_new": "f1",
+    "session_list": "f2",
+    "editor_open": "f3",
+    "variant_cycle": "f11",
+    "model_list": "f12",
+    "model_cycle_recent": "none",
+    "model_cycle_recent_reverse": "none"
+  },
+  "plugin": [["@mcowger/opencode-sshmaster", {
+    "host": "devbox",
+    "forwards": [
+      { "local": 3000, "remote": 3000 }
+    ]
+  }]]
+}
