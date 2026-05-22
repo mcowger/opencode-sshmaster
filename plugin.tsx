@@ -356,6 +356,7 @@ const tui: TuiPlugin = async (api, rawOptions, _meta) => {
 
   if (process.platform === "win32") {
     api.slots.register({
+      id: "ssh-tunnel",
       order: 250,
       slots: {
         sidebar_content() {
@@ -383,6 +384,7 @@ const tui: TuiPlugin = async (api, rawOptions, _meta) => {
 
   if (!host) {
     api.slots.register({
+      id: "ssh-tunnel",
       order: 250,
       slots: {
         sidebar_content() {
@@ -469,6 +471,7 @@ const tui: TuiPlugin = async (api, rawOptions, _meta) => {
   doConnect()
 
   api.slots.register({
+    id: "ssh-tunnel",
     order: 250,
     slots: {
       sidebar_content() {
