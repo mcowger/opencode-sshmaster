@@ -1,0 +1,12 @@
+{
+  "$schema": "https://opencode.ai/tui.json",
+  "plugin": [["@mcowger/opencode-sshmaster", {
+    "host": "my-server",
+    "identityFile": "~/.ssh/id_ed25519",
+    "forwards": [
+      { "local": 3000, "remote": 3000 },
+      { "local": 5432, "remote": 5432 },
+      { "local": 6379, "remote": 6379, "remoteHost": "redis.internal" }
+    ]
+  }]]
+}

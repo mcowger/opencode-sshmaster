@@ -30,5 +30,8 @@ report.[0-9]_.[0-9]_.[0-9]_.[0-9]_.json
 # IntelliJ based IDEs
 .idea
 
+# opencode local config
+tui.json
+
 # Finder (MacOS) folder config
 .DS_Store
