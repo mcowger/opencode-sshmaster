@@ -1,0 +1,38 @@
+{
+  "name": "@mcowger/opencode-sshmaster",
+  "version": "1.0.0",
+  "description": "OpenCode plugin for SSH tunnel management with port forwarding",
+  "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js"
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "bun build ssh-tunnel.tsx --outfile dist/index.js --target node",
+    "prepublishOnly": "bun run build"
+  },
+  "keywords": ["opencode", "plugin", "ssh", "tunnel", "port-forward"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mcowger/opencode-sshmaster.git"
+  },
+  "peerDependencies": {
+    "@opencode-ai/plugin": ">=1.15.0"
+  },
+  "devDependencies": {
+    "@opencode-ai/plugin": "^1.15.8",
+    "@opentui/core": "^0.2.15",
+    "@opentui/solid": "^0.2.15",
+    "@types/bun": "latest",
+    "typescript": "^5"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  }
+}

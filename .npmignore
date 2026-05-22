@@ -1,0 +1,9 @@
+*.ts
+!dist/*.ts
+*.tsx
+tsconfig.json
+.github/
+.opencode/
+bun.lock
+node_modules/
+tui.sample.jsonc
